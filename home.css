@@ -1,0 +1,184 @@
+body {
+    background-color:#E8E8DE;
+ /*   background-image: url("intro_cream_of_crop.jpg");*/
+    background-position: top right ;
+    background-repeat: no-repeat;
+}
+ul.a {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 35px;
+    border-style: solid;
+    border-width: 4px;
+}
+h1 {
+    text-align: center;
+    color: rebeccapurple;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+input [type=text]:focus{
+    border: 3px solid lightblue;
+}
+select{
+    width: 50%;
+    padding:14px 20px;
+    border:none;
+    cursor: pointer;
+}
+input[type=button]{
+    border-radius: 40px;
+    background-color: rgba(206, 210, 61, 0.22);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    margin: 4px 2px;
+    width: 100%;    
+}
+input[type=number]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+input[type=submit]{
+    border-radius: 40px;
+    background-color: rgba(244, 233, 233, 0.79);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    margin: 4px 2px;
+    width: 50%;    
+}
+input[type=reset]{
+    border-radius: 40px;
+    background-color: rgba(244, 233, 233, 0.79);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    margin: 4px 2px;
+    width: 50%;
+
+}
+input[type=submit]:hover{
+    background-color: wheat;
+}
+input[type=reset]:hover{
+    background-color: wheat;
+}
+.header{
+    background-color: lightgray;
+    padding: 20px;
+    text-align:center;
+}
+.navigationbar{
+    overflow: hidden;
+    background-color: rgba(188, 237, 116, 0.74);
+
+}
+.navigationbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+}
+.navigationbar a:hover,a:active{
+    background-color: rebeccapurple;
+    color: #0728AC;
+}
+p.fclass{
+    font-size: 125%;
+    padding: 10px;
+    margin: 0;
+    text-indent: -800px;
+}
+h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: brown;
+}
+a:active{
+    color: darkblue;
+}
+a:link{
+    color: red;
+}
+div.bord{
+    border:2px solid green;
+    text-align: justify;
+    border-radius: 20px;
+    font-size:140%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font:Calibri;
+    padding:10px;
+}
+div.bord1{
+    border:2px solid green;
+    text-align: right;
+    border-radius: 20px;
+    font-size:80%;
+    line-height: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font:Calibri;
+    padding:10px;
+    margin: 50px;
+    width:1000px;
+}
+div.manish{
+    width: 1500px;
+    border: none;
+}
+div.items{
+    border-radius: 40px;
+    background-color: rgba(244, 233, 233, 0.79);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    margin: 4px 2px;
+    width: 25%;   
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #0E0000;
+    text-align: left;
+    padding: 8px;
+    background-color: white;
+}
+div.update_button{
+    border-radius: 40px;
+    background-color: rgba(244, 233, 233, 0.79);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    margin: 4px 2px;
+    width: 50%;    
+}
+@media print{@page {size: potrait}}

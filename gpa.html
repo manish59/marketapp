@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GPA Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<script src="index.js"></script>
+</head>
+<body>
+    <div class="header">
+<h1>GPA Calculator</h1>
+<script>today();</script>
+    </div>
+    <div class="navigationbar">
+    <a href="index.html">Home</a>
+    <a href="gpa.html">GPA Calculator</a>
+    <a href="signup.html">Customer Info Sign Up</a>
+    <a href="billing.php">Today Billing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    </div>
+        Enter the Courses<input type="text" id="courses" name="courses">
+        <button onclick="myfunction()">Submit</button>
+    <p id="d"></p>
+   <h2>Your Total GPA is <p id="d1"></p></h>
+    <script>
+        function myfunction(){
+        var no_of_courses=document.getElementById("courses").value;
+        //document.getElementById("d").innerHTML=no_of_courses;
+        var i ,text=""  ;
+        for(i=1;i<=no_of_courses;i++)
+        {
+            text=text+'Enter Course '+i.toString()+'<input type="text" onchange="calculate()" id="'+i.toString()+'" name="'+i.toString()+'\"\"><br>Enter Credit Hours<input onchange="calculate()" type="text" id="c'+i+'" name="c'+i+'"'+'><br>';
+        }
+        document.getElementById("d").innerHTML=text;
+        }
+        function calculate(){
+            courses=document.getElementById("courses").value;
+            var sum=0,credit_hours=0;
+            for(var i=1;i<=courses;i++)
+            {
+                a1=document.getElementById(i.toString()).value;
+                b1=document.getElementById("c"+i).value;
+                if(a1=="A" || a1=="a"){sum=sum+4*Number(b1);}
+                else if(a1=="B" || a1=="b"){sum=sum+3*Number(b1);}
+                else if(a1=="C" || a1=="c"){sum=sum+2*Number(b1);}
+                else if(a1="D" || a1=="d"){sum=sum+1*Number(b1);}
+                credit_hours=credit_hours+Number(b1);
+            }
+            var text="", gpa=sum/credit_hours;
+            if(gpa==4){text="Wow You got a Nice GPA :)";}
+            else if(gpa<4 && gpa>3){text=text+"You got a better GPA Aim for high";}
+            else if(gpa <3 && gpa>2){text=text+"You need to work Harder;"}
+            else{text=text+"You failed Start studying";}
+            document.getElementById("d1").innerHTML=gpa+" "+text;
+        }
+    </script>
+</body>
+</html>
